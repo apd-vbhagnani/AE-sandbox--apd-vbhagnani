@@ -1,0 +1,6 @@
+sources:
+  - name: VIDYABHAGNANI
+    database: VIDYABHAGNANI
+    schema: AE_SANDBOX_RAW
+    tables:
+      - name: FIVETRAN_STRIPE
