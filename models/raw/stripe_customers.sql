@@ -1,6 +1,6 @@
 {{ config(
     materialized="table", 
-    tags=["francisco.moya@aimpointdigital.com"]
+    tags=["vidya.bhagnani@aimpointdigital.com"]
 ) }}
 
     /*
@@ -12,7 +12,7 @@
 with
     data_to_keep as (
         select *
-        from {{ source("VIDYABHAGNANI", "FIVETRAN_STRIPE") }}
+        from {{ source("VIDYABHAGNANI","FIVETRAN_STRIPE") }}
 
         where _file ilike '%stripe/customers/customers%'
     )
